@@ -1,0 +1,483 @@
+<div>
+    <p>
+        Comp 7081 Assignment 2.
+    </p>
+</div>
+<h1>
+    Introduction of the project
+</h1>
+<h1>
+    Background
+</h1>
+<h1>
+    Requirement Analysis
+    <br/>
+    <br/>
+</h1>
+<p>
+    Use Cases / User Stories
+</p>
+<p>
+    Since the user that we will be focusing on is the clerk, we will be creating user cases and stories for only the clerk. A typical clerk processes all the
+    customer services, like renting a vehicle, returning a vehicle, etc.
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>Use Cases</strong>
+</p>
+<p>
+    1. <strong>Log into the system:</strong> Clerk is asked to enter username and password to login into the system. This will display menu selections to
+    process rental, process vehicle return and show reports.
+</p>
+<p>
+    2. <strong>Processes renting a vehicle:</strong> Clerk will either enter a new rental or process a rental from an existing reservation. Information
+    included will be type of vehicle and return date and time and insurance coverage.
+</p>
+<p>
+    3. <strong>Returning a vehicle:</strong> The clerk enters the date, time time and odometer reading and whether the gas tank is full. The Clerk then
+    displays total cost and takes payment for the bill.
+</p>
+<p>
+    4. <strong>Clerk brings up reports</strong>;
+</p>
+<p>
+    I. Show the vehicles of a specified catgory that are available in a given location for a given set dates (usually given as form-date and to date)
+</p>
+<p>
+    II. Show the vehicles in a specified location and category that are overdue
+</p>
+<p>
+    III. Show the vehicles in a specified location and category that are for sale and their sale prices
+</p>
+<table cellpadding="0" cellspacing="0" align="left">
+    <tbody>
+        <tr>
+            <td width="72" height="24">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <img width="417" height="444" src="images/clip_image002.jpg"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br clear="ALL"/>
+<p>
+    <strong>Use Stories</strong>
+</p>
+<p>
+    <strong>Use case one can be split into two stories: </strong>
+</p>
+<p>
+    1. A Clerk logs into system with username and password so he can use the system.
+    <br/>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Incorrect information displays an error
+</p>
+<p>
+    b. Correct information will bring user to main menu.
+    <br/>
+    <br/>
+</p>
+<p>
+    2. A Clerk is displayed menu Items so he can enter the menu they would like to work from.
+    <br/>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Three Buttons are displayed: Process Rental, Process Return and Show Report
+</p>
+<p>
+    <strong>Use case two can be split into five stories. </strong>
+</p>
+<p>
+    1. From the main menu a clerk clicks on process rental and is brought to an page where he can process a rental
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Page will display rental input form, with a button labeled “Previous Reservation”.
+</p>
+<p>
+    b. Form will also include Location, type of vehicle and day and time to drop off and return the vehicle.
+</p>
+<p>
+    2. A Clerk clicks on Previous Reservation and it brings up a form so they can search via confirmation number or phone number.
+</p>
+<p>
+    <u>Acceptance: </u>
+</p>
+<p>
+    a. Form displays two input fields, confirmation number and phone number
+</p>
+<p>
+    3. On the search for reservation form, a clerk inputs the confirmation number or phone number and hits submit so he can find a previous reservation.
+</p>
+<p>
+    <u>Acceptance: </u>
+</p>
+<p>
+    a. If a reservation is found, it returns to reservation form with all fields pre-populated
+</p>
+<p>
+    b. If a reservation is not found, an error is displayed “No reservation found”
+</p>
+<p>
+4. On the process rental form, a clerk fills out missing information from the rental input form and hits submit so he can take payment from the customer    <u></u>
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. If there are no errors, payment form is displayed
+</p>
+<p>
+    b. If there are errors, there will be an error message describing what was wrong
+</p>
+<p>
+    5. On the payment form, a clerk is displayed a total. Clerk fills out payment information and hits submit
+    <br/>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. If there are no errors, rental is submitted and payment is charged
+</p>
+<p>
+    b. If there are errors, there will be an error message describing what was wrong
+</p>
+<p>
+    <strong>Use case three can be split into two stories:</strong>
+</p>
+<p>
+    1. From the main menu, a clerk clicks on return a vehicle. This will bring up a form so the clerk may begin processing a return.
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Form will display a drop down box of license plates. Also included is a time and date field that is automatically filled out, an odometer field and a
+    gas tank full check box
+</p>
+<p>
+    2. From the Return Vehicle display, as a clerk, he can return a vehicle into inventory.
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Form will display a drop down box of license plates.
+</p>
+<p>
+    b. Also included is a time and date field that is automatically filled out, an odometer field and a gas tank full check box
+</p>
+<p>
+    c. If there is an error, the system will display one
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>Use case four can be split into four stories:</strong>
+</p>
+<p>
+    1. From the main menu, a clerk clicks on reports; this will bring up a form so the clerk may begin processing a return.
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Form will display with a drop down for Category, Location, Dates,
+</p>
+<p>
+    b. Form will display check box for overdue, and for sale
+</p>
+<p>
+    2. From the reports display, as a clerk, can search for specified category that are available in a given location for a given set dates
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Brings up information all on one page if possible
+</p>
+<p>
+    b. Displays an error “no results found” if no results are found
+</p>
+<p>
+    3. From the reports display, as a clerk, can search for vehicles in a specified location and category that are overdue
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Brings up information all on one page if possible
+</p>
+<p>
+    b. Displays an error “no results found” if no results are found
+</p>
+<p>
+    4. From the reports display, as a clerk, can search for vehicles in a specified location and category that are for sale and their sale prices
+</p>
+<p>
+    <u>Acceptance:</u>
+</p>
+<p>
+    a. Brings up information all on one page if possible
+</p>
+<p>
+    b. Displays an error “no results found” if no results are found
+</p>
+<p>
+    Class Diagram
+</p>
+<p>
+    <img width="624" height="277" src="images/clip_image004.jpg"/>
+</p>
+<p>
+    Sequence Diagram
+</p>
+<p>
+    <img
+        width="576"
+        height="332"
+        src="images/clip_image005.png"
+        alt="Description: C:\Users\AC\Desktop\Aleks School\Assignment 2\HTMl\Comp 7081 Assignment 2_files\image003.png"
+    />
+</p>
+<p>
+    <img
+        width="521"
+        height="411"
+        src="images/clip_image006.jpg"
+        alt="Description: C:\Users\AC\Desktop\Aleks School\Assignment 2\HTMl\Comp 7081 Assignment 2_files\image004.jpg"
+    />
+</p>
+<p>
+    <img
+        width="439"
+        height="435"
+        src="images/clip_image007.jpg"
+        alt="Description: C:\Users\AC\Desktop\Aleks School\Assignment 2\HTMl\Comp 7081 Assignment 2_files\image005.jpg"
+    />
+</p>
+<p>
+    <img
+        width="389"
+        height="385"
+        src="images/clip_image008.jpg"
+        alt="Description: C:\Users\AC\Desktop\Aleks School\Assignment 2\HTMl\Comp 7081 Assignment 2_files\image006.jpg"
+    />
+</p>
+<p>
+    Data Flow Diagram
+</p>
+<p>
+    <img
+        width="624"
+        height="707"
+        src="images/clip_image010.jpg"
+        alt="Description: C:\Users\AC\Desktop\Aleks School\Assignment 2\HTMl\Comp 7081 Assignment 2_files\image007.jpg"
+    />
+</p>
+<h1>
+    Design Documents
+</h1>
+<h1>
+    System Design
+</h1>
+<p>
+    The design of the overall clerk system structure.
+</p>
+<h2>
+    Architecture
+</h2>
+<p>
+    At the architectural design level, we use an architectural context diagram (ACD) to model the manner which software interacts with entities external to its
+    boundaries.
+</p>
+<p>
+    Superordinate systems – the Clerk function is one component of SuperRent system. It will call by up level functions
+</p>
+<p>
+    · Peer-level systems – Report Display, Credit Card Validation, Car rental system
+</p>
+<ul>
+    <li>
+        Actors - Clear, Control Panel, Menu Display
+    </li>
+</ul>
+<p>
+    <img width="578" height="250" src="images/clip_image012.jpg"/>
+</p>
+<br clear="all"/>
+<p>
+    <strong></strong>
+</p>
+<h2>
+    Components
+</h2>
+<p>
+    <img width="578" height="350" src="images/clip_image014.jpg"/>
+</p>
+<h2>
+    Database / data structure
+</h2>
+<p>
+    <img width="578" height="332" src="images/clip_image016.jpg"/>
+    <strong></strong>
+</p>
+<h2>
+    Detailed Class Diagrams
+</h2>
+<p>
+    <img width="578" height="366" src="images/clip_image018.jpg"/>
+</p>
+<br clear="all"/>
+<p>
+    <strong></strong>
+</p>
+<h1>
+    Detailed Sequence Diagrams / State Diagrams
+</h1>
+<h2>
+    Login
+</h2>
+<p>
+    <img width="578" height="326" src="images/clip_image020.jpg"/>
+    <strong></strong>
+</p>
+<h2>
+    Create Rental
+</h2>
+<p>
+    <img width="578" height="393" src="images/clip_image022.jpg"/>
+</p>
+<h2>
+    Show Report
+</h2>
+<p>
+    <img width="578" height="369" src="images/clip_image024.jpg"/>
+</p>
+<h2>
+    Return Vehicle
+</h2>
+<p>
+    <img width="578" height="337" src="images/clip_image026.jpg"/>
+</p>
+<h1>
+    User Interface
+</h1>
+<p>
+    n Common theme Design, each section of the site should have a common look/theme. The company logo should be on every page as well as a common header. All
+    font types and basic layout should be used throughout the site
+</p>
+<p>
+    n Graphic files should be relative to site. Design with simplicity to allow for quickest loading. All pages should be tested at both 28K and 56K dial-up
+    modem speeds to ensure each webpage can be accessed timely.
+</p>
+<p>
+    n Designed for HTML version 5.0, version of browser MS Internet Explorer 6.0+ and compliable browsers.
+</p>
+<p>
+    n Filename convention: file extensions = “.html”, home page name =”index.html”
+</p>
+<p>
+    n Scripting languages: PHP 5.0 ???
+</p>
+<p>
+    n Database: MS-ACCESS
+</p>
+<p>
+    n SSL for secure information transferring over internet, such as credit card information, password.
+</p>
+<h2>
+    Style Guide
+</h2>
+<p>
+    Visually appealing - The site must have attractive mix of text, photos and graphics and should give customers a strong impression of the hotel service,
+    features and characteristics.
+</p>
+<p>
+    Theme of the site - warm tones, giving the feeling of home, highlights, simple and clear language, images reflect the theme of the site, and showing the
+    site's personality and taste. Promotion and corporate logo will through the site to enhance their visibility.
+</p>
+<p>
+    For ease of use, the website must provide consistent orientation and navigational aids, such as hierarchical menus that tell users how deep they are into a
+    topic or subtopic as well as a homepage link or icon on each page in the same position.
+</p>
+<h3>
+    Screen page
+</h3>
+<p>
+    n Page header: identification of the web site and its logo.
+</p>
+<p>
+    n Page: navigation should be the major part, the online room booking, special offers, partners’ information, membership information, and the latest event
+    information.
+</p>
+<h3>
+    Navigation design
+</h3>
+<p>
+    Navigation system is an effective tool to connect pages through hypertext or image links, the viewer can easily open pages on the website.
+</p>
+<h2>
+    Screen Layout
+</h2>
+<p>
+    This is a sample of layout. All pages of the site will follow, and each page will has it own contents as style guide.
+</p>
+<br clear="all"/>
+<p>
+    <strong></strong>
+</p>
+<h2>
+    Screen Template
+</h2>
+<p>
+    <img width="578" height="327" src="images/clip_image028.jpg"/>
+</p>
+<h2>
+    Vehicle Sale Screen
+</h2>
+<p>
+    <img width="578" height="351" src="images/clip_image030.jpg"/>
+</p>
+<h2>
+    Clerk Login screen
+</h2>
+<p>
+    <img width="578" height="244" src="images/clip_image032.jpg"/>
+</p>
+<h2>
+    Vehicle screen
+</h2>
+<p>
+    <img width="578" height="346" src="images/clip_image034.jpg"/>
+</p>
+<h2>
+    Rental Screen
+</h2>
+<p>
+    <img width="578" height="298" src="images/clip_image036.jpg"/>
+</p>
+<h2>
+    Customer Screen
+</h2>
+<p>
+    <img width="578" height="287" src="images/clip_image038.jpg"/>
+</p>
+<h2>
+    Reservation Screen
+</h2>
+<p>
+    <img width="578" height="297" src="images/clip_image040.jpg"/>
+</p>
